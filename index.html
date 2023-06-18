@@ -99,6 +99,10 @@
             <button id="btn9" class="btn"></button>
         </div>
     </div>
+    <div id="aftergame">
+        <button id="playagain">Play again</button>
+        <button id="newgame">New Game</button>
+    </div>
 </body>
 <script src="/socket.io/socket.io.js"></script>
 <script>
@@ -108,6 +112,7 @@
     document.getElementById("oppNameCont").style.display = "none"
     document.getElementById("valueCont").style.display = "none"
     document.getElementById("whosTurn").style.display = "none"
+    document.getElementById("aftergame").style.display = "none"
     const socket = io();
     let name;
     document.getElementById('find').addEventListener("click", function () {
