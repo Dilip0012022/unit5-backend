@@ -58,7 +58,7 @@ io.on("connection",(socket)=>{
     })
 })
 app.get("/",(req,res)=>{
-    return res.sendFile(__dirname+"/index.html")
+    return res.send("done")
 })
 
 server.listen(3000,()=>{
